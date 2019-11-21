@@ -53,7 +53,7 @@ def test_forward(model_class, encoder_name, encoder_depth, **kwargs):
     _test_forward(model)
 
 
-@pytest.mark.parametrize("model_class", [smp.FPN, smp.PSPNet, smp.Linknet, smp.Unet])
+@pytest.mark.parametrize("model_class", [smp.FPN, smp.PSPNet, smp.Linknet, smp.Unet, smp.BiFPN])
 def test_forward_backward(model_class):
     model = model_class(DEFAULT_ENCODER, encoder_weights=None)
     _test_forward_backward(model)
