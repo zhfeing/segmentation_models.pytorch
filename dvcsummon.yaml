@@ -1,0 +1,5 @@
+objects:
+  model:
+    summon:
+      type: python
+      call: dvcsummon.get_model
