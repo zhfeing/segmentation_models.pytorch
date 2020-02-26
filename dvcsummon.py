@@ -1,6 +1,8 @@
 import torch
 import segmentation_models_pytorch as smp
 
+from typing import Optional
+
 
 def load_weights(summon, model: torch.nn.Module, weights_file_path: str):
     summon.pull(weights_file_path)
@@ -10,13 +12,23 @@ def load_weights(summon, model: torch.nn.Module, weights_file_path: str):
     return model
 
 
-def get_model(summon, model: str, encoder_name: str = "resnet34", encoder_weights: str = "imagenet", **kwargs):
+def get_model(
+        summon,
+        model: str,
+        encoder_name: str = "resnet34",
+        encoder_weights: Optional[str] = "imagenet",
+        weights: Optional[str] = None,
+        **kwargs,
+) -> torch.nn.Module:
     if model not in smp.__dict__:
         raise ValueError("No such model architecture ({}) in SMP.".format(model))
 
     model = smp.__dict__[model](encoder_name=encoder_name, encoder_weights=None, **kwargs)
 
-    if encoder_weights is not None:
+    if weights is not None:
+        load_weights(summon, model, weights)
+
+    elif encoder_weights is not None:
         path = "weights/{}/{}.pth".format(encoder_weights, encoder_name)
         load_weights(summon, model.encoder, path)
 

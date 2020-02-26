@@ -1,5 +1,15 @@
 objects:
   model:
-    summon:
+    summon: &base_summon
       type: python
       call: dvcsummon.get_model
+
+  ade20k:
+    summon:
+      <<: *base_summon
+      args:
+        model: FPN
+        encoder_name: se_resnext50_32x4d
+        weights: weights/ade20k/fpn_se-resnext50-32x4d_00005.pth
+        classes: 150
+        activation: argmax2d
