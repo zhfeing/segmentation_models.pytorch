@@ -29,7 +29,7 @@ def get_model(
         load_weights(summon, model, weights)
 
     elif encoder_weights is not None:
-        path = "weights/{}/{}.pth".format(encoder_weights, encoder_name)
+        path = "zoo/encoders/{}/{}.pth".format(encoder_weights, encoder_name)
         load_weights(summon, model.encoder, path)
 
     return model

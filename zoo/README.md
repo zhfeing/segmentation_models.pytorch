@@ -26,7 +26,7 @@ model = dvcx.summon(
  
 | Name                    | mIoU score | Pixel Acc\. | Revision | Summon File     |
 |-------------------------|:----------:|:-----------:|:--------:|:---------------:|
-| ade20k\_fpn\_srx50\_v01 | 38\.24     | 77\.33      | master   | zoo/ade20k.yaml |
+| 001_ade20k\_fpn\_srx50  | 38\.24     | 77\.33      | master   | zoo/ade20k.yaml |
 |                         |            |             |          ||
 |                         |            |             |          ||
 |                         |            |             |          ||

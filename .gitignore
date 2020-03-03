@@ -4,6 +4,9 @@ __pycache__/
 *$py.class
 .idea/
 
+# pytorch models extension
+*.pth
+
 # C extensions
 *.so
 
