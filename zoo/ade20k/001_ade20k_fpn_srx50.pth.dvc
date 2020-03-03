@@ -1,7 +1,7 @@
 md5: 6655ba636a7c8325c90c06cb5a7107f6
 outs:
 - md5: 480d18bfc45da7a74148ec5788413b99
-  path: fpn_se-resnext50-32x4d_00005.pth
+  path: 001_ade20k_fpn_srx50.pth
   cache: true
   metric: false
   persist: false
