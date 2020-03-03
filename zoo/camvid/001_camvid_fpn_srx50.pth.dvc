@@ -1,0 +1,7 @@
+md5: ec10e86765c24ee60d7184ddb11a4b65
+outs:
+- md5: f09b343b5bf4edc33d802fa65f23f74d
+  path: 001_camvid_fpn_srx50.pth
+  cache: true
+  metric: false
+  persist: false

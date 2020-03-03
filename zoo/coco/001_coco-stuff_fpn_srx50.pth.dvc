@@ -1,0 +1,7 @@
+md5: eefa27c58f601cb488dc35fbc7a829ee
+outs:
+- md5: ac0bba21be367e6086413b6dd5f06622
+  path: 001_coco-stuff_fpn_srx50.pth
+  cache: true
+  metric: false
+  persist: false

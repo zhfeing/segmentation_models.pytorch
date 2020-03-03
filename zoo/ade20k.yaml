@@ -1,5 +1,5 @@
 objects:
-  ade20k_fpn_srx50_v01:
+  001_ade20k_fpn_srx50:
     summon:
       type: python
       call: zoo.api.get_model

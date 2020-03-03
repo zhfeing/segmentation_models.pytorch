@@ -1,0 +1,11 @@
+objects:
+  001_camvid_fpn_srx50:
+    summon:
+      type: python
+      call: zoo.api.get_model
+      args:
+        model: FPN
+        encoder_name: se_resnext50_32x4d
+        weights: zoo/camvid/001_camvid_fpn_srx50.pth
+        classes: 150
+        activation: argmax2d
