@@ -26,6 +26,8 @@ model = dvcx.summon(
  **Dataset description:**  
  There are totally 150 semantic categories, which include stuffs like sky, road, grass, and discrete objects like person, car, bed. Note that there are non-uniform distribution of objects occuring in the images, mimicking a more natural object occurrence in daily scene.
 
+Labels info is available [here](https://github.com/CSAILVision/placeschallenge/blob/master/sceneparsing/objectInfo150.txt).
+
 <details>
 <summary>Code snippet for model loading.</summary>
 <p>
@@ -40,8 +42,6 @@ model = dvcx.summon(name, rev=rev, repo=repo, summon_file=summon_file)
 ```
 </p>
 </details>
-
-Labels info is available [here](https://github.com/CSAILVision/placeschallenge/blob/master/sceneparsing/objectInfo150.txt).
 
 <details>
 <summary>Image preprocessing is standard (if another is not specified in table).</summary>
@@ -59,10 +59,13 @@ preprocessed_image = (image - mean) / std
 |-------------------------|:----------:|:-----------:|:--------:|:---------------:|
 | 001_ade20k\_fpn\_srx50  | 38\.24     | 77\.33      | master   | zoo/ade20k.yaml |
 
+---
 
  ### COCO-Stuff
  **Dataset description:**  
  The COCO Stuff Segmentation Task is designed to push the state of the art in semantic segmentation of stuff classes. Whereas the object detection task addresses thing classes (person, car, elephant), this task focuses on stuff classes (grass, wall, sky).
+
+Labels info is available [here](https://github.com/nightrome/cocostuff/blob/master/labels.md).
 
 <details>
 <summary>Code snippet for model loading.</summary>
@@ -78,8 +81,6 @@ model = dvcx.summon(name, rev=rev, repo=repo, summon_file=summon_file)
 ```
 </p>
 </details>
-
-Labels info is available [here](https://github.com/nightrome/cocostuff/blob/master/labels.md).
 
 <details>
 <summary>Image preprocessing is standard (if another is not specified in table).</summary>
@@ -97,10 +98,13 @@ preprocessed_image = (image - mean) / std
 |-------------------------|:----------:|:-----------:|:--------:|:---------------:|
 | 001_coco-stuff\_fpn\_srx50  |      |       | master   | zoo/coco.yaml |
 
+---
 
  ### CamVid
  **Dataset description:**  
  The Cambridge-driving Labeled Video Database (CamVid) is the first collection of videos with object class semantic labels, complete with metadata.
+
+Labels map ```['sky', 'building', 'pole', 'road', 'pavement', 'tree', 'signsymbol', 'fence', 'car', 'pedestrian', 'bicyclist', 'unlabelled']```
 
 <details>
 <summary>Code snippet for model loading.</summary>
@@ -116,8 +120,6 @@ model = dvcx.summon(name, rev=rev, repo=repo, summon_file=summon_file)
 ```
 </p>
 </details>
-
-Labels map ```['sky', 'building', 'pole', 'road', 'pavement', 'tree', 'signsymbol', 'fence', 'car', 'pedestrian', 'bicyclist', 'unlabelled']```
 
 <details>
 <summary>Image preprocessing is standard (if another is not specified in table).</summary>
