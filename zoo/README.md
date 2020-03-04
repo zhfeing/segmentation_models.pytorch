@@ -1,6 +1,12 @@
 # Segmentation Models Zoo
 
-To get the model using `dvcx` select the appropriate `name`, `revision` and `dvcsummon` file in the tables below:
+Collection of semantic segmentation models trained on different [datasets](#datasets).
+
+## How to use
+
+Models zoo organized using [DVC](https://dvc.org) and DVCX tools for managment of models code together with models weights. It allows to load model even if repo have been updated and backward compatability of weights have been broken, all you need is to specify which revision to use (listed bellow in tables for each model).  
+
+Here is a code snippet how to load model with `dvcx` (select `name`, `revision` and `dvcsummon` file in one of the tables below):
  ```python
 import dvcx
 
@@ -11,16 +17,18 @@ model = dvcx.summon(
     repo="https://github.com/qubvel/segmentation_models.pytorch",
 )
 ```
+[Notebook](../examples/pretrained%20models%20inference.ipynb) with example of model loading and inference. 
 
+## Datasets
 
-### Datasets
-
- - [CamVid] [[models](#camvid)]
- - [COCO-Stuff] [[models](#coco-stuff)]
- - [ADE20K] [[models](#ade20k)]
- - [Pascal VOC] [[models](#pascal-voc)]
- - [CityScapes] [[models](#cityscapes)]
- - [Inria semantic labeling] [[models](#inria)]
+ - [ADE20K](http://sceneparsing.csail.mit.edu/) [[models](#ade20k)]
+ - [COCO-Stuff](http://cocodataset.org/#stuff-eval) [[models](#coco-stuff)]
+ - [CamVid](https://mi.eng.cam.ac.uk/research/projects/VideoRec/CamVid/) [[models](#camvid)]
+ - [Pascal VOC](http://host.robots.ox.ac.uk/pascal/VOC/) [[models](#pascal-voc)]
+ - [CityScapes](https://www.cityscapes-dataset.com/) [[models](#cityscapes)]
+ - [Inria Aerial Image Labeling](https://project.inria.fr/aerialimagelabeling/) [[models](#inria)]
+ 
+ ---
  
  ### ADE20K
  **Dataset description:**  
