@@ -52,7 +52,7 @@ model = dvcx.summon(name, rev=rev, repo=repo, summon_file=summon_file)
 </details>
 
 <details>
-<summary>Image preprocessing is standard (if another is not specified in table).</summary>
+<summary>Image preprocessing (if another is not specified in table).</summary>
 <p>
 
 ```python
@@ -63,9 +63,9 @@ preprocessed_image = (image - mean) / std
 </p>
 </details>
 
-| Name                    | mIoU score | Pixel Acc\. | Revision | Summon File     |
-|-------------------------|:----------:|:-----------:|:--------:|:---------------:|
-| 001_ade20k\_fpn\_srx50  | 38\.24     | 77\.33      | master   | zoo/ade20k.yaml |
+| Name                    | mIoU score | Pixel Acc\. | Revision | Summon File     | Train crop size |
+|-------------------------|:----------:|:-----------:|:--------:|:---------------:|:---------------:|
+| 001_ade20k\_fpn\_srx50  | 38\.24     | 77\.33      | master   | zoo/ade20k.yaml | 512x512         |
 
 ---
 
@@ -91,7 +91,7 @@ model = dvcx.summon(name, rev=rev, repo=repo, summon_file=summon_file)
 </details>
 
 <details>
-<summary>Image preprocessing is standard (if another is not specified in table).</summary>
+<summary>Image preprocessing (if another is not specified in table).</summary>
 <p>
 
 ```python
@@ -102,9 +102,9 @@ preprocessed_image = (image - mean) / std
 </p>
 </details>
 
-| Name                        | mIoU score | Pixel Acc\. | Revision | Summon File     |
-|-----------------------------|:----------:|:-----------:|:--------:|:---------------:|
-| 001_coco-stuff\_fpn\_srx50  | 41.94      | 64.73       | master   | zoo/coco.yaml   |
+| Name                        | mIoU score | Pixel Acc\. | Revision | Summon File     |Train crop size |
+|-----------------------------|:----------:|:-----------:|:--------:|:---------------:|:---------------:|
+| 001_coco-stuff\_fpn\_srx50  | 41.94      | 64.73       | master   | zoo/coco.yaml   | 512x512         |
 
 ---
 
@@ -130,7 +130,7 @@ model = dvcx.summon(name, rev=rev, repo=repo, summon_file=summon_file)
 </details>
 
 <details>
-<summary>Image preprocessing is standard (if another is not specified in table).</summary>
+<summary>Image preprocessing (if another is not specified in table).</summary>
 <p>
 
 ```python
@@ -141,7 +141,7 @@ preprocessed_image = (image - mean) / std
 </p>
 </details>
 
-| Name                    | mIoU score | Pixel Acc\. | Revision | Summon File     |
-|-------------------------|:----------:|:-----------:|:--------:|:---------------:|
-| 001_camvid\_fpn\_srx50  | 76.18      | 94.68       | master   | zoo/camvid.yaml |
+| Name                    | mIoU score | Pixel Acc\. | Revision | Summon File     | Train crop size |
+|-------------------------|:----------:|:-----------:|:--------:|:---------------:|:---------------:|
+| 001_camvid\_fpn\_srx50  | 76.18      | 94.68       | master   | zoo/camvid.yaml | 320x320         |
 
