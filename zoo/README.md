@@ -67,6 +67,8 @@ preprocessed_image = (image - mean) / std
 |-------------------------|:----------:|:-----------:|:--------:|:---------------:|:---------------:|
 | 001_ade20k\_fpn\_srx50  | 38\.24     | 77\.33      | master   | zoo/ade20k.yaml | 512x512         |
 
+scores reported for validation set **without** test time augmentation and multiscale testing
+
 ---
 
  ### COCO-Stuff
@@ -102,9 +104,11 @@ preprocessed_image = (image - mean) / std
 </p>
 </details>
 
-| Name                        | mIoU score | Pixel Acc\. | Revision | Summon File     |Train crop size |
+| Name                        | mIoU score | Pixel Acc\. | Revision | Summon File     |Train crop size  |
 |-----------------------------|:----------:|:-----------:|:--------:|:---------------:|:---------------:|
 | 001_coco-stuff\_fpn\_srx50  | 41.94      | 64.73       | master   | zoo/coco.yaml   | 512x512         |
+
+scores reported for validation set **without** test time augmentation and multiscale testing
 
 ---
 
@@ -144,4 +148,7 @@ preprocessed_image = (image - mean) / std
 | Name                    | mIoU score | Pixel Acc\. | Revision | Summon File     | Train crop size |
 |-------------------------|:----------:|:-----------:|:--------:|:---------------:|:---------------:|
 | 001_camvid\_fpn\_srx50  | 76.18      | 94.68       | master   | zoo/camvid.yaml | 320x320         |
+
+scores reported for validation set **without** test time augmentation and multiscale testing
+
 
