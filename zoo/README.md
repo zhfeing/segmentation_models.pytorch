@@ -102,9 +102,9 @@ preprocessed_image = (image - mean) / std
 </p>
 </details>
 
-| Name                    | mIoU score | Pixel Acc\. | Revision | Summon File     |
-|-------------------------|:----------:|:-----------:|:--------:|:---------------:|
-| 001_coco-stuff\_fpn\_srx50  |      |       | master   | zoo/coco.yaml |
+| Name                        | mIoU score | Pixel Acc\. | Revision | Summon File     |
+|-----------------------------|:----------:|:-----------:|:--------:|:---------------:|
+| 001_coco-stuff\_fpn\_srx50  | 41.94      | 64.73       | master   | zoo/coco.yaml   |
 
 ---
 
@@ -143,5 +143,5 @@ preprocessed_image = (image - mean) / std
 
 | Name                    | mIoU score | Pixel Acc\. | Revision | Summon File     |
 |-------------------------|:----------:|:-----------:|:--------:|:---------------:|
-| 001_camvid\_fpn\_srx50  |      |       | master   | zoo/camvid.yaml |
+| 001_camvid\_fpn\_srx50  | 76.18      | 94.68       | master   | zoo/camvid.yaml |
 
