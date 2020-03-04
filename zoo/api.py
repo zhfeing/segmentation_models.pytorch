@@ -7,8 +7,8 @@ from typing import Optional
 def load_weights(summon, model: torch.nn.Module, weights_file_path: str):
     summon.pull(weights_file_path)
     with open(weights_file_path, mode="rb") as fd:
-        weights = torch.load(fd)
-        model.load_state_dict(weights, map_location="cpu")
+        weights = torch.load(fd, map_location="cpu")
+        model.load_state_dict(weights)
     return model
 
 
