@@ -7,5 +7,5 @@ objects:
         model: FPN
         encoder_name: se_resnext50_32x4d
         weights: zoo/coco/001_coco-stuff_fpn_srx50.pth
-        classes: 150
+        classes: 182
         activation: argmax2d
