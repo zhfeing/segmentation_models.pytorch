@@ -3,6 +3,10 @@ objects:
     summon:
       type: python
       call: zoo.api.get_model
+      reqs:
+        - torchvision>=0.3.0
+        - pretrainedmodels==0.7.4
+        - efficientnet-pytorch>=0.6.3
       args:
         model: FPN
         encoder_name: se_resnext50_32x4d
