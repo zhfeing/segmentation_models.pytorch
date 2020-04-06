@@ -116,7 +116,7 @@ scores reported for validation set **without** test time augmentation and multis
  **Dataset description:**  
  The Cambridge-driving Labeled Video Database (CamVid) is the first collection of videos with object class semantic labels, complete with metadata.
 
-Labels map ```['sky', 'building', 'pole', 'road', 'pavement', 'tree', 'signsymbol', 'fence', 'car', 'pedestrian', 'bicyclist', 'unlabelled']```
+Labels map ```['unlabelled', 'sky', 'building', 'pole', 'road', 'pavement', 'tree', 'signsymbol', 'fence', 'car', 'pedestrian', 'bicyclist']```
 
 <details>
 <summary>Code snippet for model loading.</summary>
@@ -145,9 +145,12 @@ preprocessed_image = (image - mean) / std
 </p>
 </details>
 
-| Name                    | mIoU score | Pixel Acc\. | Revision | Summon File     | Train crop size |
+| Name                    | mIoU score | Pixel Acc\. | Revision | Summon File     | Image size |
 |-------------------------|:----------:|:-----------:|:--------:|:---------------:|:---------------:|
-| 001_camvid\_fpn\_srx50  | 76.18      | 94.68       | master   | zoo/camvid.yaml | 320x320         |
+| 021_camvid_unet_se_resnext101_32x4d| 78.03 | 95.68 | master | zoo/camvid.yaml | 512 x 672 |
+| 020_camvid_unet_se_resnext50_32x4d | 77.53 | 95.07 | master | zoo/camvid.yaml | 512 x 672 |
+| 019_camvid_unet_se_resnext50_32x4d | 75.13 | 94.47 | master | zoo/camvid.yaml | 360 x 480 |
+
 
 scores reported for validation set **without** test time augmentation and multiscale testing
 

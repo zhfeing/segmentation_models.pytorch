@@ -1,0 +1,7 @@
+md5: 154ae06b5471dc1186857ad64638af7c
+outs:
+- md5: 8ca32d2a5450700111d2902bc9ebe071
+  path: 019_camvid_unet_se_resnext50_32x4d.pth
+  cache: true
+  metric: false
+  persist: false
