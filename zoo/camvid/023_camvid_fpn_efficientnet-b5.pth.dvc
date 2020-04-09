@@ -1,0 +1,7 @@
+md5: a8801aca6f88eec3a844c0f9dfd52594
+outs:
+- md5: e9e859a2b18f9dc23b207f780cd5797f
+  path: 023_camvid_fpn_efficientnet-b5.pth
+  cache: true
+  metric: false
+  persist: false

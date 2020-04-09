@@ -1,0 +1,7 @@
+md5: 951ee9727256e76d65d0b288bf51dedd
+outs:
+- md5: dca05e4882d11dd2a8aaeb83b59da40c
+  path: 022_camvid_unet_efficientnet-b3.pth
+  cache: true
+  metric: false
+  persist: false

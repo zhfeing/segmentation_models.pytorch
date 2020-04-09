@@ -1,0 +1,7 @@
+md5: a5a64380ecb2b8d1f5a88210642f6039
+outs:
+- md5: 665030c76895a29815a20046b5506286
+  path: 024_camvid_pan_resnext50_32x4d.pth
+  cache: true
+  metric: false
+  persist: false

@@ -1,0 +1,7 @@
+md5: 3fb514fcd6bceb018492645009c33e5e
+outs:
+- md5: f01f71147a0fccfca116b20c255153aa
+  path: 027_camvid_pspnet_se_resnext50_32x4d.pth
+  cache: true
+  metric: false
+  persist: false

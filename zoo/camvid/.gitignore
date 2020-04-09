@@ -1,0 +1,9 @@
+/001_camvid_fpn_srx50.pth
+/019_camvid_unet_se_resnext50_32x4d.pth
+/020_camvid_unet_se_resnext50_32x4d.pth
+/021_camvid_unet_se_resnext101_32x4d.pth
+/022_camvid_unet_efficientnet-b3.pth
+/023_camvid_fpn_efficientnet-b5.pth
+/024_camvid_pan_resnext50_32x4d.pth
+/025_camvid_deeplabv3_resnext50_32x4d.pth
+/027_camvid_pspnet_se_resnext50_32x4d.pth

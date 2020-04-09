@@ -1,11 +1,102 @@
 objects:
-  001_camvid_fpn_srx50:
+  
+  019_camvid_unet_se_resnext50_32x4d:
     summon:
-      type: python
-      call: zoo.api.get_model
       args:
-        model: FPN
-        encoder_name: se_resnext50_32x4d
-        weights: zoo/camvid/001_camvid_fpn_srx50.pth
-        classes: 12
         activation: argmax2d
+        classes: 12
+        encoder_name: se_resnext50_32x4d
+        model: Unet
+        weights: zoo/camvid/019_camvid_unet_se_resnext50_32x4d.pth
+      call: zoo.api.get_model
+      type: python
+
+  020_camvid_unet_se_resnext50_32x4d:
+    summon:
+      args:
+        activation: argmax2d
+        classes: 12
+        encoder_name: se_resnext50_32x4d
+        model: Unet
+        weights: zoo/camvid/020_camvid_unet_se_resnext50_32x4d.pth
+      call: zoo.api.get_model
+      type: python
+
+  021_camvid_unet_se_resnext101_32x4d:
+    summon:
+      args:
+        activation: argmax2d
+        classes: 12
+        encoder_name: se_resnext101_32x4d
+        model: Unet
+        weights: zoo/camvid/021_camvid_unet_se_resnext101_32x4d.pth
+      call: zoo.api.get_model
+      type: python
+
+  022_camvid_unet_efficientnet-b3:
+    summon:
+      args:
+        activation: argmax2d
+        classes: 12
+        encoder_name: efficientnet-b3
+        model: Unet
+        weights: zoo/camvid/022_camvid_unet_efficientnet-b3.pth
+      call: zoo.api.get_model
+      type: python
+      
+  023_camvid_fpn_efficientnet-b5:
+    summon:
+      args:
+        activation: argmax2d
+        classes: 12
+        encoder_name: efficientnet-b5
+        model: FPN
+        weights: zoo/camvid/023_camvid_fpn_efficientnet-b5.pth
+      call: zoo.api.get_model
+      type: python
+
+  024_camvid_pan_resnext50_32x4d:
+    summon:
+      args:
+        activation: argmax2d
+        classes: 12
+        encoder_name: resnext50_32x4d
+        model: PAN
+        weights: zoo/camvid/024_camvid_pan_resnext50_32x4d.pth
+      call: zoo.api.get_model
+      type: python
+
+  025_camvid_deeplabv3_resnext50_32x4d:
+    summon:
+      args:
+        activation: argmax2d
+        classes: 12
+        encoder_name: resnext50_32x4d
+        model: DeepLabV3
+        weights: zoo/camvid/025_camvid_deeplabv3_resnext50_32x4d.pth
+      call: zoo.api.get_model
+      type: python
+
+  026_camvid_pspnet_se_resnext50_32x4d:
+    summon:
+      args:
+        activation: argmax2d
+        classes: 12
+        encoder_name: se_resnext50_32x4d
+        model: PSPNet
+        weights: zoo/camvid/026_camvid_pspnet_se_resnext50_32x4d.pth
+      call: zoo.api.get_model
+      type: python
+
+  027_camvid_pspnet_se_resnext50_32x4d:
+    summon:
+      args:
+        activation: argmax2d
+        classes: 12
+        encoder_depth: 4
+        encoder_name: se_resnext50_32x4d
+        model: PSPNet
+        upsampling: 16
+        weights: zoo/camvid/027_camvid_pspnet_se_resnext50_32x4d.pth
+      call: zoo.api.get_model
+      type: python

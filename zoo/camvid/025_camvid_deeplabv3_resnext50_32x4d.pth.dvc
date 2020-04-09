@@ -1,0 +1,7 @@
+md5: 59c27ced6184e13f2571bc43b5f739f7
+outs:
+- md5: 3f13cd2f0b5395e8253d2002d1979dde
+  path: 025_camvid_deeplabv3_resnext50_32x4d.pth
+  cache: true
+  metric: false
+  persist: false
