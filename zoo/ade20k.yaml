@@ -13,3 +13,58 @@ objects:
         weights: zoo/ade20k/001_ade20k_fpn_srx50.pth
         classes: 150
         activation: argmax2d
+
+  011_ade20k_fpn_se_resnext101_32x4d:
+    summon:
+      args:
+        activation: argmax2d
+        classes: 151
+        encoder_name: se_resnext101_32x4d
+        model: FPN
+        weights: zoo/ade20k/011_ade20k_fpn_se_resnext101_32x4d.pth
+      call: zoo.api.get_model
+      type: python
+
+  019_ade20k_fpn_se_resnext50_32x4d:
+    summon:
+      args:
+        activation: argmax2d
+        classes: 151
+        encoder_name: se_resnext50_32x4d
+        model: FPN
+        weights: zoo/ade20k/019_ade20k_fpn_se_resnext50_32x4d.pth
+      call: zoo.api.get_model
+      type: python
+
+  020_ade20k_fpn_senet154:
+    summon:
+      args:
+        activation: argmax2d
+        classes: 151
+        encoder_name: senet154
+        model: FPN
+        weights: zoo/ade20k/020_ade20k_fpn_senet154.pth
+      call: zoo.api.get_model
+      type: python
+
+  023_ade20k_fpn_efficientnet-b7:
+    summon:
+      args:
+        activation: argmax2d
+        classes: 151
+        encoder_name: efficientnet-b7
+        model: FPN
+        weights: zoo/ade20k/023_ade20k_fpn_efficientnet-b7.pth
+      call: zoo.api.get_model
+      type: python
+
+  024_ade20k_fpn_efficientnet-b5:
+    summon:
+      args:
+        activation: argmax2d
+        classes: 151
+        encoder_name: efficientnet-b5
+        model: FPN
+        weights: zoo/ade20k/024_ade20k_fpn_efficientnet-b5.pth
+      call: zoo.api.get_model
+      type: python

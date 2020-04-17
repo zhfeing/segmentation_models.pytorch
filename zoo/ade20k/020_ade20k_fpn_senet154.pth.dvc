@@ -1,0 +1,7 @@
+md5: 3c6b6f0c8a4b3f70953b489b092088d2
+outs:
+- md5: 633916d87cab2ebca5037583f84193b1
+  path: 020_ade20k_fpn_senet154.pth
+  cache: true
+  metric: false
+  persist: false

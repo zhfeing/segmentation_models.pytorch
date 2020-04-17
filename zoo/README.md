@@ -63,9 +63,17 @@ preprocessed_image = (image - mean) / std
 </p>
 </details>
 
-| Name                    | mIoU score | Pixel Acc\. | Revision | Summon File     | Train crop size |
-|-------------------------|:----------:|:-----------:|:--------:|:---------------:|:---------------:|
-| 001_ade20k\_fpn\_srx50  | 38\.24     | 77\.33      | master   | zoo/ade20k.yaml | 512x512         |
+| Name                                | mIoU score | Pixel Acc. | Revision | Summon File     | Image size      | FP16** |
+|-------------------------------------|:----------:|:----------:|:--------:|:---------------:|:---------------:|:------:|
+| 001_ade20k\_fpn\_srx50              | 38.24      | 77.33      | master   | zoo/ade20k.yaml | 512\*           | -      |
+| 011_ade20k_fpn_se_resnext101_32x4d  | 40.93      | 77.82      | master   | zoo/ade20k.yaml | 512\*           | -      |
+| 019_ade20k_fpn_se_resnext50_32x4d   | 39.97      | 77.12      | master   | zoo/ade20k.yaml | 512\*           | -      |
+| 020_ade20k_fpn_senet154             | 43.30      | 78.13      | master   | zoo/ade20k.yaml | 512\*           | O1     |
+| 023_ade20k_fpn_efficientnet-b7      | 46.73      | 80.25      | master   | zoo/ade20k.yaml | 512\*           | O1     |
+| 024_ade20k_fpn_efficientnet-b5      | 44.46      | 79.28      | master   | zoo/ade20k.yaml | 512\*           | O1     |
+
+\* - size of smallest image dimension (preserving aspect ratio)
+\** - opt_level according to NVIDIA Apex tool 
 
 scores reported for validation set **without** test time augmentation and multiscale testing
 

@@ -1,0 +1,7 @@
+md5: 1178d33dac63894b337d6b7c04792181
+outs:
+- md5: 4e4f5b432f93078fbb2d84e533dd7a2a
+  path: 019_ade20k_fpn_se_resnext50_32x4d.pth
+  cache: true
+  metric: false
+  persist: false

@@ -1,0 +1,7 @@
+md5: 3f2b5be03bf528044348dcae5e216291
+outs:
+- md5: 794fda09c305ee1b4ec87b77bce806ab
+  path: 023_ade20k_fpn_efficientnet-b7.pth
+  cache: true
+  metric: false
+  persist: false
