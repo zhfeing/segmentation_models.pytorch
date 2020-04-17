@@ -159,7 +159,7 @@ preprocessed_image = (image - mean) / std
 | 020_camvid_unet_se_resnext50_32x4d   | 77.53 | 95.07 | master | zoo/camvid.yaml | 512 x 672 |
 | 021_camvid_unet_se_resnext101_32x4d  | 78.03 | 95.68 | master | zoo/camvid.yaml | 512 x 672 |
 | 022_camvid_unet_efficientnet-b3      | 75.08 | 95.08 | master | zoo/camvid.yaml | 512 x 672 |
-| 022_camvid_азт_efficientnet-b5       | 77.39 | 95.38 | master | zoo/camvid.yaml | 512 x 672 |
+| 022_camvid_fpn_efficientnet-b5       | 77.39 | 95.38 | master | zoo/camvid.yaml | 512 x 672 |
 | 024_camvid_pan_resnext50_32x4d       | 75.42 | 94,36 | master | zoo/camvid.yaml | 512 x 672 |
 | 025_camvid_deeplabv3_resnext50_32x4d | 78.11 | 95.30 | master | zoo/camvid.yaml | 512 x 672 |
 | 027_camvid_pspnet_se_resnext50_32x4d | 73.02 | 94.59 | master | zoo/camvid.yaml | 512 x 672 |
