@@ -1,0 +1,7 @@
+md5: af26a67c27587988ea61a8129d4789a4
+outs:
+- md5: cfd98b130da0eac86ec56568e8c63290
+  path: 001_voc_fpn_resnet34.pth
+  cache: true
+  metric: false
+  persist: false

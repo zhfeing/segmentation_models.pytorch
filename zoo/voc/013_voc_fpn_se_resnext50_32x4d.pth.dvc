@@ -1,0 +1,7 @@
+md5: 4995408e1d9ae8790cb7780e8acb6968
+outs:
+- md5: f9a5b5dcbb94502af38a61c143e17c6d
+  path: 013_voc_fpn_se_resnext50_32x4d.pth
+  cache: true
+  metric: false
+  persist: false

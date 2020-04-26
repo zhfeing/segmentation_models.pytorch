@@ -1,0 +1,7 @@
+md5: e90602a6513cd4b5eb0acd9607d5f194
+outs:
+- md5: 9b142fdbb2ee5c5e4c25bacda6585554
+  path: 018_voc_unet_se_resnext50_32x4d.pth
+  cache: true
+  metric: false
+  persist: false

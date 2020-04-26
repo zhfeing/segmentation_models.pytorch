@@ -1,0 +1,7 @@
+md5: 1adcdaec6a65ad14d56868b43cdac5f6
+outs:
+- md5: 389d3895fc11a3964f1ab1724b296bc9
+  path: 016_voc_unet_efficientnet-b5.pth
+  cache: true
+  metric: false
+  persist: false

@@ -1,0 +1,7 @@
+md5: c14dcdac1f2aec461ece9b88fdcd1bf6
+outs:
+- md5: 782e365a21983a067089e2b6c720859c
+  path: 014_voc_fpn_efficientnet-b7.pth
+  cache: true
+  metric: false
+  persist: false

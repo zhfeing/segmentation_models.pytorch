@@ -1,0 +1,7 @@
+md5: b9d2a0290f009759cd5a3d95ae2209c7
+outs:
+- md5: 19ebc427a273faf7d050e3167ecf1a1e
+  path: 003_voc_fpn_efficientnet-b5.pth
+  cache: true
+  metric: false
+  persist: false

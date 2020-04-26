@@ -1,0 +1,200 @@
+objects:
+    001_voc_fpn_resnet34:
+        summon:
+          args:
+            activation: argmax2d
+            classes: 21
+            encoder_name: resnet34
+            model: FPN
+            weights: zoo/voc/001_voc_fpn_resnet34.pth
+          call: zoo.api.get_model
+          type: python
+
+    002_voc_deeplabv3_resnet34:
+    summon:
+        args:
+        activation: argmax2d
+        classes: 21
+        encoder_name: resnet34
+        model: DeepLabV3
+        weights: zoo/voc/002_voc_deeplabv3_resnet34.pth
+        call: zoo.api.get_model
+        type: python
+
+    003_voc_fpn_efficientnet-b5:
+    summon:
+        args:
+        activation: argmax2d
+        classes: 21
+        encoder_name: efficientnet-b5
+        model: FPN
+        weights: zoo/voc/003_voc_fpn_efficientnet-b5.pth
+        call: zoo.api.get_model
+        type: python
+
+    004_voc_fpn_efficientnet-b7:
+    summon:
+        args:
+        activation: argmax2d
+        classes: 21
+        encoder_name: efficientnet-b7
+        encoder_weights: advprop
+        model: FPN
+        weights: zoo/voc/004_voc_fpn_efficientnet-b7.pth
+        call: zoo.api.get_model
+        type: python
+
+    005_voc_pan_efficientnet-b5:
+    summon:
+        args:
+        activation: argmax2d
+        classes: 21
+        encoder_name: efficientnet-b5
+        encoder_weights: advprop
+        model: PAN
+        weights: zoo/voc/005_voc_pan_efficientnet-b5.pth
+        call: zoo.api.get_model
+        type: python
+
+    006_voc_deeplabv3plus_efficientnet-b5:
+    summon:
+        args:
+        activation: argmax2d
+        classes: 21
+        encoder_name: efficientnet-b5
+        encoder_weights: advprop
+        model: DeepLabV3Plus
+        weights: zoo/voc/006_voc_deeplabv3plus_efficientnet-b5.pth
+        call: zoo.api.get_model
+        type: python
+
+    007_voc_deeplabv3plus_efficientnet-b7:
+    summon:
+        args:
+        activation: argmax2d
+        classes: 21
+        encoder_name: efficientnet-b7
+        encoder_weights: advprop
+        model: DeepLabV3Plus
+        weights: zoo/voc/007_voc_deeplabv3plus_efficientnet-b7.pth
+        call: zoo.api.get_model
+        type: python
+
+    013_voc_fpn_se_resnext50_32x4d:
+    summon:
+        args:
+        activation: argmax2d
+        classes: 21
+        encoder_name: se_resnext50_32x4d
+        model: FPN
+        weights: zoo/voc/013_voc_fpn_se_resnext50_32x4d.pth
+        call: zoo.api.get_model
+        type: python
+
+    014_voc_fpn_efficientnet-b7:
+    summon:
+        args:
+        activation: argmax2d
+        classes: 21
+        encoder_name: efficientnet-b7
+        encoder_weights: advprop
+        model: FPN
+        weights: zoo/voc/014_voc_fpn_efficientnet-b7.pth
+        call: zoo.api.get_model
+        type: python
+
+    015_voc_deeplabv3plus_efficientnet-b7:
+    summon:
+        args:
+        activation: argmax2d
+        classes: 21
+        encoder_name: efficientnet-b7
+        encoder_weights: advprop
+        model: DeepLabV3Plus
+        weights: zoo/voc/015_voc_deeplabv3plus_efficientnet-b7.pth
+        call: zoo.api.get_model
+        type: python
+
+    016_voc_unet_efficientnet-b5:
+    summon:
+        args:
+        activation: argmax2d
+        classes: 21
+        decoder_channels:
+        - 256
+        - 256
+        - 256
+        - 21
+        - 21
+        encoder_name: efficientnet-b5
+        encoder_weights: advprop
+        model: Unet
+        weights: zoo/voc/016_voc_unet_efficientnet-b5.pth
+        call: zoo.api.get_model
+        type: python
+
+    017_voc_unet_efficientnet-b7:
+    summon:
+        args:
+        activation: argmax2d
+        classes: 21
+        decoder_channels:
+        - 256
+        - 256
+        - 256
+        - 21
+        - 21
+        encoder_name: efficientnet-b7
+        encoder_weights: advprop
+        model: Unet
+        weights: zoo/voc/017_voc_unet_efficientnet-b7.pth
+        call: zoo.api.get_model
+        type: python
+
+    018_voc_unet_se_resnext50_32x4d:
+    summon:
+        args:
+        activation: argmax2d
+        classes: 21
+        decoder_channels:
+        - 256
+        - 256
+        - 256
+        - 21
+        - 21
+        encoder_name: se_resnext50_32x4d
+        encoder_weights: imagenet
+        model: Unet
+        weights: zoo/voc/018_voc_unet_se_resnext50_32x4d.pth
+        call: zoo.api.get_model
+        type: python
+
+    019_voc_unet_se_resnext101_32x4d:
+    summon:
+        args:
+        activation: argmax2d
+        classes: 21
+        decoder_channels:
+        - 256
+        - 256
+        - 256
+        - 21
+        - 21
+        encoder_name: se_resnext101_32x4d
+        encoder_weights: imagenet
+        model: Unet
+        weights: zoo/voc/019_voc_unet_se_resnext101_32x4d.pth
+        call: zoo.api.get_model
+        type: python
+
+    021_voc_fpn_timm-efficientnet-b7:
+    summon:
+        args:
+        activation: argmax2d
+        classes: 21
+        encoder_name: timm-efficientnet-b7
+        encoder_weights: noisy-student
+        model: FPN
+        weights: zoo/voc/021_voc_fpn_timm-efficientnet-b7.pth
+        call: zoo.api.get_model
+        type: python

@@ -1,0 +1,7 @@
+md5: c95fe5db1abb4bd6de5df46ea33ece03
+outs:
+- md5: b9a52664693680db7c9f0631ef6edfef
+  path: 015_voc_deeplabv3plus_efficientnet-b7.pth
+  cache: true
+  metric: false
+  persist: false

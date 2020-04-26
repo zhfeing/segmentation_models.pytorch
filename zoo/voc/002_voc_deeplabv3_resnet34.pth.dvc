@@ -1,0 +1,7 @@
+md5: ec5a77b76ed0e1fcf82633f6f7d2635c
+outs:
+- md5: 12268fed181ae1b51533652cf062f2f9
+  path: 002_voc_deeplabv3_resnet34.pth
+  cache: true
+  metric: false
+  persist: false

@@ -1,0 +1,7 @@
+md5: cde7a2e01877f2b0eb377ee1415fa8f7
+outs:
+- md5: d32c56b30b100c0aef02cb275febebc5
+  path: 005_voc_pan_efficientnet-b5.pth
+  cache: true
+  metric: false
+  persist: false

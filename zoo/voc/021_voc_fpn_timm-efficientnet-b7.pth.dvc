@@ -1,0 +1,7 @@
+md5: 9647f29d01cb64d397c7c169568f28c3
+outs:
+- md5: 5c67535cd42c00643308b7b6bae9f95e
+  path: 021_voc_fpn_timm-efficientnet-b7.pth
+  cache: true
+  metric: false
+  persist: false

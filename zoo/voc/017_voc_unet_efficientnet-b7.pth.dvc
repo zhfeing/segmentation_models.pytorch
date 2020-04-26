@@ -1,0 +1,7 @@
+md5: 42345c1ba697d3dece8ab8ae9c1c87fb
+outs:
+- md5: 026c211435ab70a4712945686e793792
+  path: 017_voc_unet_efficientnet-b7.pth
+  cache: true
+  metric: false
+  persist: false
