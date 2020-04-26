@@ -168,3 +168,66 @@ preprocessed_image = (image - mean) / std
 scores reported for validation set **without** test time augmentation and multiscale testing
 
 
+---
+
+ ### Pascal VOC
+ **Dataset description:**  
+The main goal of this challenge is to recognize objects from a number of visual object classes in realistic scenes (i.e. not pre-segmented objects). It is fundamentally a supervised learning learning problem in that a training set of labelled images is provided. The twenty object classes that have been selected are:
+
+ - Person: person
+ - Animal: bird, cat, cow, dog, horse, sheep
+ - Vehicle: aeroplane, bicycle, boat, bus, car, motorbike, train
+ - Indoor: bottle, chair, dining table, potted plant, sofa, tv/monitor
+
+Labels map ```['background', 'aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car', 'cat', 'chair', 'cow', 'diningtable', 'dog', 'horse', 'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', 'train', 'tvmonitor']```
+
+<details>
+<summary>Code snippet for model loading.</summary>
+<p>
+
+```python
+name =   # paste model name here
+rev =    # paste revison here
+summon_file =   # paste summon file name here
+repo = "https://github.com/qubvel/segmentation_models.pytorch/"
+
+model = dvcx.summon(name, rev=rev, repo=repo, summon_file=summon_file)
+```
+</p>
+</details>
+
+<details>
+<summary>Image preprocessing (if another is not specified in table).</summary>
+<p>
+
+```python
+mean = np.array([123.67, 116.28, 103.53])
+std = np.array([58.39, 57.12, 57.37])
+preprocessed_image = (image - mean) / std
+```
+</p>
+</details>
+
+| Name                                    | mIoU score | Pixel Acc\. | Revision | Summon File     | Image size | FP16** |
+|-----------------------------------------|:----------:|:-----------:|:--------:|:---------------:|:----------:|:------:|
+| 001_voc_fpn_resnet34                    | 64.11 | 91.39 | master | zoo/voc.yaml | 512* | O1 |
+| 002_voc_deeplabv3_resnet34              | 67.65 | 92.25 | master | zoo/voc.yaml | 512* | O1 |
+| 003_voc_fpn_efficientnet-b5             | 77.55 | 94.87 | master | zoo/voc.yaml | 512* | O1 |
+| 005_voc_pan_efficientnet-b5             | 72.74 | 93.62 | master | zoo/voc.yaml | 512* | O1 |
+| 006_voc_deeplabv3plus_efficientnet-b5   | 77.55 | 94.76 | master | zoo/voc.yaml | 512* | O1 |
+| 007_voc_deeplabv3plus_efficientnet-b7   | 78.49 | 95.07 | master | zoo/voc.yaml | 512* | O1 |
+| 013_voc_fpn_se_resnext50_32x4d          | 71.51 | 93.45 | master | zoo/voc.yaml | 512* | O1 |
+| 014_voc_fpn_efficientnet-b7             | 81.09 | 95.81 | master | zoo/voc.yaml | 512* | O1 |
+| 015_voc_deeplabv3plus_efficientnet-b7   | 80.28 | 95.62 | master | zoo/voc.yaml | 512* | O1 |
+| 016_voc_unet_efficientnet-b5            | 81.52 | 95.89 | master | zoo/voc.yaml | 512* | O1 |
+| 017_voc_unet_efficientnet-b7            | 81.47 | 95.91 | master | zoo/voc.yaml | 512* | O1 |
+| 018_voc_unet_se_resnext50_32x4d         | 70.09 | 93.10 | master | zoo/voc.yaml | 512* | O1 |
+| 019_voc_unet_se_resnext101_32x4d        | 71.99 | 93.80 | master | zoo/voc.yaml | 512* | O1 |
+| 021_voc_fpn_timm-efficientnet-b7        | 76.45 | 94.64 | master | zoo/voc.yaml | 512* | O1 |
+
+\* - size of smallest image dimension (preserving aspect ratio)  
+\** - opt_level according to NVIDIA Apex tool 
+
+scores reported for validation set **without** test time augmentation and multiscale testing
+
+
