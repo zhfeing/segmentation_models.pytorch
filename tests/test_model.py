@@ -7,6 +7,7 @@ import segmentation_models_pytorch as smp
 device = torch.device("cpu")
 
 
+x = torch.ones(2, 3, 224, 224).to(device)
 for model_name, config in smp.encoders.encoders.items():
     pretrained_settings = config["pretrained_settings"]
     for dataset_name in pretrained_settings.keys():
@@ -19,6 +20,5 @@ for model_name, config in smp.encoders.encoders.items():
             encoder_weights=dataset_name
         ).to(device)
 
-# x = torch.ones(2, 3, 224, 224).to(device)
-# y = model(x)
-# print(y.shape)
+        y = model(x)
+        print(y.shape)
